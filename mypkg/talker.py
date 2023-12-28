@@ -1,19 +1,16 @@
 import rclpy                     #ROS 2のクライアントのためのライブラリ
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
-from person_msgs.msg import Person   #通信の型（16ビットの符号付き整数）
+from person_msgs.srv import Query   #通信の型（16ビットの符号付き整数）
+
+def cb(request, response):
+    if request.name == "山元広太":
+        response.age = 19
+    else:
+        response.age = 255
+
+    return response
 
 rclpy.init()
 node = Node("talker")            #ノード作成（nodeという「オブジェクト」を作成）
-pub = node.create_publisher(Person, "person", 10)   #パブリッシャのオブジェクト作成
-n = 0 #カウント用変数
-
-def cb():          #17行目で定期実行されるコールバック関数
-    global n       #関数を抜けてもnがリセットされないようにしている
-    msg = Person()  #メッセージの「オブジェクト」
-    msg.name = "山元広太" #msgオブジェクトの持つdataにnを結び付け
-    msg.age = n
-    pub.publish(msg)        #pubの持つpublishでメッセージ送信    
-    n += 1
-
-node.create_timer(0.5, cb)  #タイマー設定
+srv = node.create_service(Query, "query", cb)   #パブリッシャのオブジェクト作成
 rclpy.spin(node)            #実行（無限ループ）
