@@ -1,14 +1,20 @@
-# ROS2
-これは、４SRの授業内で扱ったROS2のリポジトリです。
+# mypkg
+これは、4SRの授業内で扱ったROS2のリポジトリです。
 
-[![test](https://github.com/KotaYamamoto04/ros2/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/ros2/actions/workflows/test.yml)
+[![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
 
-## 使い方
+## 役割の説明
+* talker
+* listener
+* talk_listen_
+
+
+## 実行方法
 このスクリプトはコマンドラインから実行できます。以下にその使用例を示します
 
 ## 必要なソフトウェア
 * Python
-a
+
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
