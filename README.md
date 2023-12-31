@@ -1,7 +1,7 @@
 # ROS2
 これは、４SRの授業内で扱ったROS2のリポジトリです。
 
-[![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
+[![test](https://github.com/KotaYamamoto04/ros2/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/ros2/actions/workflows/test.yml)
 
 ## 使い方
 このスクリプトはコマンドラインから実行できます。以下にその使用例を示します
