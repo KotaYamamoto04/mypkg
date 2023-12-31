@@ -4,16 +4,15 @@
 [![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
 
 ## 各種ノードの説明
-* talker.py
+* talker.py  
 パブリッシャを持つノード。数字をカウントして、トピック(/countup)を通じて送信する。
-* listener.py
+* listener.py  
 サブスクライバを持つノード。トピック(/countup)からメッセージをもらって表示する。
-* talk_listen.launch.py
+* talk_listen.launch.py  
 talker.pyとlistener.pyの２つのノードを一度に立ち上げる。
 
 ## 実行方法とその結果
-* talker.pyとlistener.pyの場合
-
+* talker.pyとlistener.pyの場合  
 ２つの端末を立ち上げて実行する。
 
 １．１つ目の端末では、
@@ -45,8 +44,7 @@ ros2 run mypkg listener
 [INFO] [1703987393.762466245] [listener]: Listen: 12
 ```
 
-* talker_listen.launch.pyの場合
-
+* talker_listen.launch.pyの場合  
 端末は１つで実行可能。
 ```
 ros2 launch mypkg talk_listen.launch.py
