@@ -76,7 +76,7 @@ ros2 launch mypkg talk_listen.launch.py
 これも実行を辞めない限り続くので、中止するときはCtrl+Cを入力。
 
 ## 必要なソフトウェア
-* Python
+* ROS2 humble
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
