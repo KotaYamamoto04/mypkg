@@ -3,6 +3,8 @@
 
 [![test](https://github.com/KotaYamamoto04/ros2/actions/badge.svg)](https://github.com/KotaYamamoto04/ros2/actions)
 
+[![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
+
 ## 使い方
 このスクリプトはコマンドラインから実行できます。以下にその使用例を示します
 
