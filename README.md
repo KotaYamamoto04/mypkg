@@ -5,9 +5,9 @@
 
 ## 各種ノードの説明
 * talker.py  
-パブリッシャを持つノード。数字をカウントして、トピック(/countup)を通じて送信する。
+パブリッシャを持つノード。数字をカウントして、トピック(/countup)を通じて送信する。  
 * listener.py  
-サブスクライバを持つノード。トピック(/countup)からメッセージをもらって表示する。
+サブスクライバを持つノード。トピック(/countup)からメッセージをもらって表示する。  
 * talk_listen.launch.py  
 talker.pyとlistener.pyの２つのノードを一度に立ち上げる。
 
@@ -15,19 +15,18 @@ talker.pyとlistener.pyの２つのノードを一度に立ち上げる。
 * talker.pyとlistener.pyの場合  
 ２つの端末を立ち上げて実行する。
 
-１．１つ目の端末では、
+１．１つ目の端末では以下のコードを入力する。このコードを実行しても、何も表示はされない。
 ```
 ros2 run mypkg talker
 ```
-を実行する。
 
-２．２つ目の端末では、
+２．２つ目の端末では以下のコードを入力する。
 ```
 ros2 run mypkg listener
 ```
-と実行する。
 
-３．実行結果は以下のようになる。
+
+３．実行結果はlistenerの方に表示され、以下のようになる。
 ```
 [INFO] [1703987387.783020334] [listener]: Listen: 0
 [INFO] [1703987388.262370278] [listener]: Listen: 1
@@ -43,9 +42,13 @@ ros2 run mypkg listener
 [INFO] [1703987393.262014145] [listener]: Listen: 11
 [INFO] [1703987393.762466245] [listener]: Listen: 12
 ```
+これは実行を辞めない限り続くので、中止するときはCtrl+Cを入力。
 
 * talker_listen.launch.pyの場合  
 端末は１つで実行可能。
+
+
+１．ターミナルにて以下のコードを入力。
 ```
 ros2 launch mypkg talk_listen.launch.py
 ```
@@ -70,7 +73,7 @@ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703987730.451949791] [listener]: Listen: 11
 [listener-2] [INFO] [1703987730.952575574] [listener]: Listen: 12
 ```
-
+これも実行を辞めない限り続くので、中止するときはCtrl+Cを入力。
 
 ## 必要なソフトウェア
 * Python
