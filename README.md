@@ -1,8 +1,6 @@
 # ROS2
 これは、４SRの授業内で扱ったROS2のリポジトリです。
 
-[![test](https://github.com/KotaYamamoto04/ros2/actions/badge.svg)](https://github.com/KotaYamamoto04/ros2/actions)
-
 [![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
 
 ## 使い方
@@ -10,6 +8,7 @@
 
 ## 必要なソフトウェア
 * Python
+a
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
