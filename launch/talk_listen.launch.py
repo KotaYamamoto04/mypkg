@@ -1,3 +1,6 @@
+#SPDX-FileCopyrightText: 2023 Kota Yamamoto s22c1133uz@s.chibakoudai.jp
+#SPDX-License-Identifier:BSD-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions
