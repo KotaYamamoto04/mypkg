@@ -1,20 +1,35 @@
 # mypkg
-これは、4SRの授業内で扱ったROS2のリポジトリです。
+これは、千葉工業大学のロボットシステム学の講義内で扱ったROS2のリポジトリです。
 
 [![test](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/KotaYamamoto04/mypkg/actions/workflows/test.yml)
 
-## 役割の説明
-* talker
-* listener
-* talk_listen_
+## 各種ノードの説明
+* talker.py
+パブリッシャを持つノード。数字をカウントして、トピック(/countup)を通じて送信する。
+* listener.py
+サブスクライバを持つノード。トピック(/countup)からメッセージをもらって表示する。
+* talk_listen.launch.py
+talker.pyとlistener.pyの２つのノードを一度に立ち上げる。
 
+## 実行方法とその結果
+* talker.pyとlistener.pyの場合
+２つの端末を立ち上げて実行する。
 
-## 実行方法
-このスクリプトはコマンドラインから実行できます。以下にその使用例を示します
+１．１つ目の端末では、
+```
+ros2 run mypkg talker
+```
+を実行する。
+２．２つ目の端末では、
+```
+ros2 run mypkg listener
+```
+と実行する。
+３．
+４．
 
 ## 必要なソフトウェア
 * Python
-
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
